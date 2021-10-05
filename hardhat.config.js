@@ -3,12 +3,12 @@ require('@nomiclabs/hardhat-waffle');
 require('dotenv').config();
 
 const MUMBAI_RPC_URL =
-  process.env.MUMBAI_RPC_URL ||
-  'https://polygon-mumbai.alchemyapi.io/v2/your-api-key';
+  process.env.MUMBAI_RPC_URL || 'https://polygon-mumbai.alchemyapi.io/v2/your-api-key';
 
 const POLYGON_MAINNET_RPC_URL =
-  process.env.POLYGON_MAINNET_RPC_URL ||
-  'https://polygon-mainnet.alchemyapi.io/v2/your-api-key';
+  process.env.POLYGON_MAINNET_RPC_URL || 'https://polygon-mainnet.alchemyapi.io/v2/your-api-key';
+
+const PRIVATE_KEY = process.env.PRIVATE_KEY || 'your private key';
 
 module.exports = {
   networks: {
