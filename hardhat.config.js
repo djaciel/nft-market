@@ -1,4 +1,4 @@
-require("@nomiclabs/hardhat-waffle");
+require('@nomiclabs/hardhat-waffle');
 
 require('dotenv').config();
 
@@ -13,7 +13,7 @@ const POLYGON_MAINNET_RPC_URL =
 module.exports = {
   networks: {
     hardhat: {
-      chainId: 1337
+      chainId: 1337,
     },
     mumbai: {
       url: MUMBAI_RPC_URL,
@@ -25,6 +25,6 @@ module.exports = {
       accounts: [PRIVATE_KEY],
       saveDeployments: true,
     },
-  }
-  solidity: "0.8.4",
+  },
+  solidity: '0.8.4',
 };
