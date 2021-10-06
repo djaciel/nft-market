@@ -10,7 +10,6 @@ import { nftAddress, nftmarketaddress } from '../config';
 
 import NFT from '../artifacts/contracts/NFT.sol/NFT.json';
 import Market from '../artifacts/contracts/NFTMarket.sol/NFTMarket.json';
-import { list } from 'postcss';
 
 export default function CreateItem() {
   const [fileUrl, setFileUrl] = useState(null);
@@ -50,8 +49,8 @@ export default function CreateItem() {
   }
 
   async function createSale(url) {
-    const web3modal = new Web3Modal();
-    const connection = await web3modal.connect();
+    const web3Modal = new Web3Modal();
+    const connection = await web3Modal.connect();
     const provider = new ethers.providers.Web3Provider(connection);
     const signer = provider.getSigner();
 
