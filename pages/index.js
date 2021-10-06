@@ -49,7 +49,7 @@ export default function Home() {
     const provider = new ethers.providers.Web3Provider(connection);
 
     const signer = provider.getSigner();
-    const contract = new ethers.Contract.length(nftmarketaddress, Market.abi, signer);
+    const contract = new ethers.Contract(nftmarketaddress, Market.abi, signer);
 
     const price = ethers.utils.parseUnits(nft.price.toString(), 'ether');
 
